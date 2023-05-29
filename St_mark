@@ -1,0 +1,99 @@
+import java.util.*;                                                        
+class main{
+
+	public static void stu_mark() {
+		Scanner input = new Scanner(System.in);
+
+		for(int i=5463;i<5473;i++){
+			System.out.println("Student "+"S_T "+( i+1)+":");
+			System.out.print("Input maths mark  : ");
+			int numM = input.nextInt();
+			System.out.print("Input IT mark  : ");
+			int numI = input.nextInt();
+			System.out.print("Input camery mark  : ");
+			int numC = input.nextInt();
+		
+		
+
+		int total=0;
+		total= numM + numI + numC;
+		double ave=total/3;
+
+	
+
+		
+
+			if(numM>=75){
+				System.out.println("Maths :"+" A");
+			}
+			else if(numM>=65){
+				System.out.println("Maths :"+" B");
+
+			}
+			else if(numM>=55){
+				System.out.println("Maths :"+" C");
+
+			}
+			else if(numM>=45){
+				System.out.println("Maths :"+" S");
+
+			}
+			else if(numM<45){
+				System.out.println("Maths :"+" F");
+
+			}
+			if(numI>=75){
+				System.out.println("IT :"+" A");
+			}
+			else if(numI>=65){
+				System.out.println("IT :"+" B");
+
+			}
+			else if(numI>=55){
+				System.out.println("IT :"+" C");
+
+			}
+			else if(numI>=45){
+				System.out.println("IT :"+" S");
+
+			}
+			else if(numI<45){
+				System.out.println("IT :"+" F");
+
+			}
+			if(numC>=75){
+				System.out.println("Camery :"+" A");
+			}
+			else if(numC>=65){
+				System.out.println("Camery :"+" B");
+
+			}
+			else if(numC>=55){
+				System.out.println("Camery :"+" C");
+
+			}
+			else if(numC>=45){
+				System.out.println("Camery :"+" S");
+
+			}
+			else if(numC<45){
+				System.out.println("Camery :"+" F");
+
+			}
+			System.out.println("Total mark is :"+total);
+			System.out.println("Average  is :"+ave);
+			System.out.println((ave>75)? "Prime Student" : "Local Student");
+			System.out.println("____________________________");
+		}
+		
+	}
+
+	public static void main(String [] args){
+		stu_mark();
+	} 
+		
+	
+}
+
+
+
